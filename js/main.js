@@ -66,12 +66,13 @@ function init() {
 }
 var counter = 0;
 function onDocumentMouseDown(){
-    counter++;
     if(counter%2==0){
-        // material.uniforms["rings"].value = 0.0;
+        material.uniforms["rings"].value = 0.0;
     } else {
-        // material.uniforms["rings"].value = ringVal;
+        material.uniforms["rings"].value = ringVal;
     }
+    counter++;
+
 }
 
 
